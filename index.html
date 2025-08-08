@@ -27,17 +27,341 @@
                     fontFamily: {
                         soraFont: ['Sora', 'sans-serif'],
                         poppinsFont: ['Poppins', 'sans-serif']
-                    }
+                    },
                 }
             }
         }
     </script>
+    <style>
+    </style>
 </head>
 
 <body class="font-soraFont">
-    <header>
+    <header class="px-3 sm:px-5 lg:px-6 py-4 bg-gradient-to-b from-[#FFFFFF] to-[#ccc8c0]">
+        <nav class="container mx-auto">
+            <div class="flex items-center justify-between bg-base-100">
+                <div>
+                    <div class="max-w-44">
+                        <img class="w-full" src="c2-assets/logo-header.png" alt="">
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-xl font-normal text-[#111111]">Product</a></li>
+                        <li><a class="text-xl font-normal text-[#111111]">Services</a></li>
+                        <li><a class="text-xl font-normal text-[#111111]">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="flex">
+                    <div class="dropdown dropdown-bottom dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-green-500" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                            <li><a class="text-xl font-normal text-[#111111]">Product</a></li>
+                            <li><a class="text-xl font-normal text-[#111111]">Services</a></li>
+                            <li><a class="text-xl font-normal text-[#111111]">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="hidden lg:flex gap-6 items-center">
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                        </div>
+                        <div>
+                            <a class="btn border border-green-500 text-xl font-normal text-[#111111]">Login</a>
+                        </div>
+                        <div>
+                            <a class="btn text-white bg-[#179800] font-normal text-xl">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <hr class="mt-1 lg:hidden border-green-600 border-2">
+        <!-- banner section start -->
+        <section class="container mx-auto mt-20">
+            <!-- banner text -->
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl md:text-6xl text-[#111111] font-semibold text-center">Freshness <span
+                        class="text-[#179800]">You Can
+                        Count</span> On, Prices You’ll Love!</h2>
+                <p class="text-xl font-normal text-[#111111] mt-8 text-center">Shop your daily essentials at unbeatable
+                    prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+            </div>
+            <!-- banner image -->
+            <div class="max-w-5xl mx-auto mt-8">
+                <img class="w-full" src="c2-assets/hero-vegetables.png" alt="">
+            </div>
+        </section>
     </header>
-    <main></main>
+    <main class="space-y-20 mt-24">
+        <!-- service section start -->
+        <section class="container mx-auto px-3 sm:px-5 lg:px-6">
+            <h2 class="text-4xl font-semibold text-[#179800] mb-10">Services</h2>
+            <!-- card container -->
+            <div class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- card-1 -->
+                <div class="bg-[#EFEBE3] max-w-md p-8 rounded-xl space-y-6">
+                    <!-- image div -->
+                    <div class="max-w-40 mx-auto bg-white rounded-full">
+                        <img class="w-full p-6" src="c2-assets/service.png" alt="">
+                    </div>
+                    <h4 class="text-2xl font-semibold text-[#111111] text-center">24/7 Services</h4>
+                    <p class="text-xl font-light text-[#111111] text-center">We Provide 24/7 service to our Customer,&
+                        Cash on Delivary is available, we provide best delivary service to our customer.Stay connect
+                        with us.</p>
+                </div>
+                <!-- card 2 -->
+                <div class="bg-[#EFEBE3] max-w-md p-8 rounded-xl space-y-6">
+                    <!-- image div -->
+                    <div class="max-w-40 mx-auto bg-white rounded-full">
+                        <img class="w-full p-6" src="c2-assets/delivery.png" alt="">
+                    </div>
+                    <h4 class="text-2xl font-semibold text-[#111111] text-center">Fast Delivery</h4>
+                    <p class="text-xl font-light text-[#111111] text-center">We Provide 24/7 service to our Customer,&
+                        Cash on Delivary is available, we provide best delivary service to our customer.Stay connect
+                        with us.</p>
+                </div>
+                <div class="bg-[#EFEBE3] max-w-md p-8 rounded-xl space-y-6">
+                    <!-- image div -->
+                    <div class="max-w-40 mx-auto bg-white rounded-full">
+                        <img class="w-full p-6" src="c2-assets/healthy.png" alt="">
+                    </div>
+                    <h4 class="text-2xl font-semibold text-[#111111] text-center">Healthy Products</h4>
+                    <p class="text-xl font-light text-[#111111] text-center">We Provide 24/7 service to our Customer,&
+                        Cash on Delivary is available, we provide best delivary service to our customer.Stay connect
+                        with us.</p>
+                </div>
+            </div>
+        </section>
+        <!-- popular product section -->
+        <section class="bg-[#d8d3d3] lg:py-32 py-16 px-3 sm:px-5 lg:px-6">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-semibold text-[#179800] mb-10">Popular Products</h2>
+                <!-- card container -->
+                <div class="flex flex-col xl:flex-row gap-6 justify-center">
+                    <!-- unity  card -->
+                    <div
+                        class="bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] rounded-xl max-w-md lg:pr-4 mx-auto lg:mx-0">
+                        <!-- inner unity card -->
+                        <div class="bg-no-repeat bg-right-bottom p-4 sm:p-10 md:p-12 lg:p-14 sm:space-y-4 h-[420px] w-full"
+                            style="background-image:url(c2-assets/vegetable-offer.png);">
+                            <h4 class="text-2xl text-white font-bold">30% Off</h4>
+                            <p class="text-base font-light text-[#111111]">Discover world best vegetsble & fresh fruits
+                                from
+                                us & enjoy healthy life</p>
+                            <button class="text-xl font-medium bg-white px-6 py-2 rounded-lg">Buy Now</button>
+                        </div>
+                    </div>
+                    <!-- grid card container -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- each grid card -->
+                        <div class="flex items-center gap-4 p-4 bg-white border-2 rounded-xl">
+                            <!-- grid card image part -->
+                            <div class="max-w-24 bg-[#dddada] rounded-xl">
+                                <img class="w-full p-1" src="c2-assets/onion.png" alt="">
+                            </div>
+                            <!-- grid card text part -->
+                            <div>
+                                <!-- grid text ratting part done by flex -->
+                                <div class="flex gap-1 items-center">
+                                    <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star fa-lg"></i>
+                                    </div>
+                                    <p class="text-base font-normal text-[#111111]">4.5</p>
+                                </div>
+                                <p class="text-xl font-medium text-[#111111]">Onion 1 KG</p>
+                                <p class="text-base font-medium text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-white border-2 rounded-xl">
+                            <!-- grid card image part -->
+                            <div class="max-w-24 bg-[#dddada] rounded-xl">
+                                <img class="w-full p-1" src="c2-assets/tomato.png" alt="">
+                            </div>
+                            <!-- grid card text part -->
+                            <div>
+                                <!-- grid text ratting part done by flex -->
+                                <div class="flex gap-1 items-center">
+                                    <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star fa-lg"></i>
+                                    </div>
+                                    <p class="text-base font-normal text-[#111111]">4.5</p>
+                                </div>
+                                <p class="text-xl font-medium text-[#111111]">Tomato 500g</p>
+                                <p class="text-base font-medium text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-white border-2 rounded-xl">
+                            <!-- grid card image part -->
+                            <div class="max-w-24 bg-[#dddada] rounded-xl">
+                                <img class="w-full p-1" src="c2-assets/potato.png" alt="">
+                            </div>
+                            <!-- grid card text part -->
+                            <div>
+                                <!-- grid text ratting part done by flex -->
+                                <div class="flex gap-1 items-center">
+                                    <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star fa-lg"></i>
+                                    </div>
+                                    <p class="text-base font-normal text-[#111111]">4.5</p>
+                                </div>
+                                <p class="text-xl font-medium text-[#111111]">Potato 1 KG</p>
+                                <p class="text-base font-medium text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-white border-2 rounded-xl">
+                            <!-- grid card image part -->
+                            <div class="max-w-24 bg-[#dddada] rounded-xl">
+                                <img class="w-full p-1" src="c2-assets/onion.png" alt="">
+                            </div>
+                            <!-- grid card text part -->
+                            <div>
+                                <!-- grid text ratting part done by flex -->
+                                <div class="flex gap-1 items-center">
+                                    <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star fa-lg"></i>
+                                    </div>
+                                    <p class="text-base font-normal text-[#111111]">4.5</p>
+                                </div>
+                                <p class="text-xl font-medium text-[#111111]">Onion 1 KG</p>
+                                <p class="text-base font-medium text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-white border-2 rounded-xl">
+                            <!-- grid card image part -->
+                            <div class="max-w-24 bg-[#dddada] rounded-xl">
+                                <img class="w-full p-1" src="c2-assets/tomato.png" alt="">
+                            </div>
+                            <!-- grid card text part -->
+                            <div>
+                                <!-- grid text ratting part done by flex -->
+                                <div class="flex gap-1 items-center">
+                                    <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star fa-lg"></i>
+                                    </div>
+                                    <p class="text-base font-normal text-[#111111]">4.5</p>
+                                </div>
+                                <p class="text-xl font-medium text-[#111111]">Tomato 500g</p>
+                                <p class="text-base font-medium text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-white border-2 rounded-xl">
+                            <!-- grid card image part -->
+                            <div class="max-w-24 bg-[#dddada] rounded-xl">
+                                <img class="w-full p-1" src="c2-assets/potato.png" alt="">
+                            </div>
+                            <!-- grid card text part -->
+                            <div>
+                                <!-- grid text ratting part done by flex -->
+                                <div class="flex gap-1 items-center">
+                                    <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star fa-lg"></i>
+                                    </div>
+                                    <p class="text-base font-normal text-[#111111]">4.5</p>
+                                </div>
+                                <p class="text-xl font-medium text-[#111111]">Potato 1 KG</p>
+                                <p class="text-base font-medium text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-white border-2 rounded-xl">
+                            <!-- grid card image part -->
+                            <div class="max-w-24 bg-[#dddada] rounded-xl">
+                                <img class="w-full p-1" src="c2-assets/tomato.png" alt="">
+                            </div>
+                            <!-- grid card text part -->
+                            <div>
+                                <!-- grid text ratting part done by flex -->
+                                <div class="flex gap-1 items-center">
+                                    <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star fa-lg"></i>
+                                    </div>
+                                    <p class="text-base font-normal text-[#111111]">4.5</p>
+                                </div>
+                                <p class="text-xl font-medium text-[#111111]">Tomato 500g</p>
+                                <p class="text-base font-medium text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-white border-2 rounded-xl">
+                            <!-- grid card image part -->
+                            <div class="max-w-24 bg-[#dddada] rounded-xl">
+                                <img class="w-full p-1" src="c2-assets/potato.png" alt="">
+                            </div>
+                            <!-- grid card text part -->
+                            <div>
+                                <!-- grid text ratting part done by flex -->
+                                <div class="flex gap-1 items-center">
+                                    <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star fa-lg"></i>
+                                    </div>
+                                    <p class="text-base font-normal text-[#111111]">4.5</p>
+                                </div>
+                                <p class="text-xl font-medium text-[#111111]">Potato 1 KG</p>
+                                <p class="text-base font-medium text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-white border-2 rounded-xl">
+                            <!-- grid card image part -->
+                            <div class="max-w-24 bg-[#dddada] rounded-xl">
+                                <img class="w-full p-1" src="c2-assets/tomato.png" alt="">
+                            </div>
+                            <!-- grid card text part -->
+                            <div>
+                                <!-- grid text ratting part done by flex -->
+                                <div class="flex gap-1 items-center">
+                                    <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star fa-lg"></i>
+                                    </div>
+                                    <p class="text-base font-normal text-[#111111]">4.5</p>
+                                </div>
+                                <p class="text-xl font-medium text-[#111111]">Tomato 500g</p>
+                                <p class="text-base font-medium text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Arrival & Offers section start -->
+        <section class="poppinsFont container mx-auto px-3 sm:px-5 lg:px-6">
+            <h2 class="text-4xl font-semibold text-[#179800] mb-10">Arrival & Offers</h2>
+            <!-- card container -->
+            <div class="flex flex-col lg:flex-row gap-6">
+                <div class="bg-[#115414] flex flex-col xl:flex-row xl:items-center p-5 xl:justify-between rounded-xl flex-1">
+                    <div class="space-y-7 text-center xl:text-start">
+                        <div class="max-w-60 mx-auto xl:mx-0">
+                            <img src="c2-assets/dawat-logo.png" alt="">
+                        </div>
+                        <button class="text-2xl text-[#FFFFFF] font-normal px-10 py-4 rounded-xl bg-[#63B76D]">Cook
+                            Exotic Dishes</button>
+                        <h3 class="text-[40px] text-white font-normal">UP to <span class="font-bold">20% OFF</span></h3>
+                    </div>
+                    <div class="max-w-md mx-auto xl:mx-0 mt-5 xl:mt-0">
+                        <img class="w-full xl:w-auto" src="c2-assets/dawat-mock-up.png" alt="">
+                    </div>
+                </div>
+                <div class="bg-[#102861] flex flex-col xl:flex-row xl:justify-between xl:items-center p-5 rounded-xl flex-1">
+                    <div class="space-y-7 text-center xl:text-start">
+                        <div class="mx-auto xl:mx-0 max-w-28">
+                            <img class="w-full xl:w-auto" src="c2-assets/india-gate-logo.png" alt="">
+                        </div>
+                        <button class="text-2xl text-white font-normal px-6 py-4 bg-[#2A4D97] rounded-xl">World’s No.1 Rice</button>
+                        <h3 class="text-[40px] text-white font-normal">UP to <span class="font-bold">40% OFF</span></h3>
+                    </div>
+                    <div class="max-w-44 mx-auto xl:mx-0">
+                        <img class="w-full xl:w-auto" src="c2-assets/india-gate-mock-up.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 
